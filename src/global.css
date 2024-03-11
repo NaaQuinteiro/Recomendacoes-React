@@ -1,0 +1,10 @@
+/* retira estilizações pré-defrinidas pelo navegador */
+* {
+  margin: 0px; 
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:rgb(9, 15, 109);
+}
