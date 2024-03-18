@@ -1,16 +1,10 @@
-import estilos from './App.module.css'
-import {Cabecalho} from './componentes/Cabecalho'
-import {Lateral} from './componentes/Lateral'
-import {Conteudo} from './componentes/Conteudo'
+import './global.css'
+import {Inicial} from './paginas/Inicial';
 
-function App() {
+export function App() {
   return (
-    <div className={estilos.gridContainer}>
-      <Cabecalho/>
-      <Lateral/>
-      <Conteudo/>
-    </div>  
+    <Inicial /> 
   )
 }
 
-export default App
+
