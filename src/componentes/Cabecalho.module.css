@@ -8,5 +8,6 @@
 .container p{
     font-size: 2rem;
     color: var(--cinza-claro);
+    padding: 10px;
 }
 
