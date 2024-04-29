@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import estilos from './Login.module.css'
+import { useNavigate } from 'react-router-dom'
 
 export function Login(){
 
@@ -7,14 +8,15 @@ export function Login(){
     //Ele consta com duas variaveis, uma de leitura(get)e outra de alteração(set)
     const[usuario, setUsuario] = useState('')
     const[senha, setSenha] = useState('')
+    const navigate = useNavigate()
 
+    function obterDadosFormulario(){
 
-    function obterDadosFormulario(e){
-
-        e.preventDefault() //segura o comportamento padrão do formulário, garbiarra temporaria
-
-        console.log(`Usuário: ${usuario}`)
-        console.log(`Senha: ${senha}`)
+        // console.log(`Usuário: ${usuario}`)
+        // console.log(`Senha: ${senha}`)
+        
+        navigate('inicial')
+      
 
     }
 

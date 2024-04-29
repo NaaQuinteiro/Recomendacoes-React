@@ -1,12 +1,17 @@
+import { BrowserRouter } from 'react-router-dom';
 import './global.css'
-import {Inicial} from './paginas/Inicial';
-import { Login } from './paginas/Login';
-import { Perfil } from './paginas/Perfil'
+import { Rotas } from './rotas/Rotas';
 
 export function App() {
   return (
-    <Perfil/> 
+    <BrowserRouter>
+      <Rotas/>
+    </BrowserRouter>
+
   )
 }
 
+// Anotações
+// precisamos criar um contexto de navegação que permitirá que todas as páginas que forem chamadas a partir
+//dessa possua os acessos aos arquivos de navegação
 
